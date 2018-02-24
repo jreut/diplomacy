@@ -1,0 +1,278 @@
+Edi:
+  - Cly
+  - Lvp
+  - Yor
+Cly:
+  - Edi
+  - Lvp
+Lvp:
+  - Cly
+  - Edi
+  - Yor
+  - Wal
+Wal:
+  - Lvp
+  - Yor
+  - Lon
+Yor:
+  - Edi
+  - Lvp
+  - Wal
+  - Lon
+Lon:
+  - Yor
+  - Wal
+Nwy:
+  - Swe
+  - Stp
+  - Fin
+Swe:
+  - Nwy
+  - Fin
+  - Den
+Fin:
+  - Swe
+  - Nwy
+  - Stp
+Den:
+  - Swe
+  - Kie
+Stp:
+  - Nwy
+  - Fin
+  - Lvn
+  - Mos
+Mos:
+  - Stp
+  - Lvn
+  - War
+  - Ukr
+  - Sev
+Lvn:
+  - Stp
+  - Mos
+  - Pru
+  - War
+Ukr:
+  - Mos
+  - Sev
+  - Rum
+  - Gal
+  - War
+Sev:
+  - Rum
+  - Ukr
+  - Mos
+  - Arm
+Arm:
+  - Sev
+  - Ank
+  - Smy
+  - Syr
+Syr:
+  - Smy
+  - Arm
+Smy:
+  - Syr
+  - Arm
+  - Ank
+  - Con
+Ank:
+  - Arm
+  - Smy
+  - Con
+Con:
+  - Ank
+  - Smy
+  - Bul
+Bul:
+  - Con
+  - Rum
+  - Ser
+  - Gre
+Rum:
+  - Sev
+  - Ukr
+  - Gal
+  - Bud
+  - Ser
+  - Bul
+Pru:
+  - Lvn
+  - War
+  - Sil
+  - Ber
+War:
+  - Pru
+  - Lvn
+  - Mos
+  - Ukr
+  - Gal
+  - Sil
+Gal:
+  - Sil
+  - War
+  - Ukr
+  - Rum
+  - Bud
+  - Vie
+  - Boh
+Bud:
+  - Gal
+  - Rum
+  - Ser
+  - Tri
+  - Vie
+Ser:
+  - Bud
+  - Rum
+  - Bul
+  - Gre
+  - Alb
+  - Tri
+Gre:
+  - Alb
+  - Ser
+  - Bul
+Alb:
+  - Tri
+  - Ser
+  - Gre
+Tri:
+  - Ven
+  - Tyr
+  - Vie
+  - Bud
+  - Ser
+  - Alb
+Vie:
+  - Tyr
+  - Boh
+  - Gal
+  - Bud
+  - Tri
+Boh:
+  - Mun
+  - Sil
+  - Gal
+  - Vie
+  - Tyr
+Sil:
+  - Mun
+  - Ber
+  - Pru
+  - War
+  - Gal
+  - Boh
+Ber:
+  - Kie
+  - Pru
+  - Sil
+  - Mun
+Kie:
+  - Den
+  - Ber
+  - Mun
+  - Ruh
+  - Hol
+Mun:
+  - Ruh
+  - Kie
+  - Ber
+  - Sil
+  - Boh
+  - Tyr
+  - Bur
+Tyr:
+  - Mun
+  - Boh
+  - Vie
+  - Tri
+  - Ven
+  - Pie
+Ven:
+  - Tyr
+  - Tri
+  - Apu
+  - Rom
+  - Tus
+  - Pie
+Apu:
+  - Ven
+  - Nap
+  - Rom
+Nap:
+  - Apu
+  - Rom
+Rom:
+  - Nap
+  - Apu
+  - Ven
+  - Tus
+Tus:
+  - Rom
+  - Ven
+  - Pie
+Pie:
+  - Tus
+  - Ven
+  - Mar
+  - Tyr
+Tun:
+  - Naf
+Naf:
+  - Tun
+Mar:
+  - Pie
+  - Bur
+  - Gas
+  - Spa
+Spa:
+  - Por
+  - Gas
+  - Mar
+Por:
+  - Spa
+Gas:
+  - Spa
+  - Mar
+  - Bur
+  - Par
+  - Bre
+Bre:
+  - Gas
+  - Par
+  - Pic
+Par:
+  - Gas
+  - Bre
+  - Pic
+  - Bur
+Bur:
+  - Mar
+  - Gas
+  - Par
+  - Pic
+  - Bel
+  - Ruh
+  - Mun
+Pic:
+  - Bre
+  - Par
+  - Bur
+  - Bel
+Bel:
+  - Pic
+  - Bur
+  - Ruh
+  - Hol
+Ruh:
+  - Bur
+  - Bel
+  - Hol
+  - Kie
+  - Mun
+Hol:
+  - Bel
+  - Ruh
+  - Kie

@@ -1,0 +1,345 @@
+NAO:
+  - NWG
+  - Cly
+  - Lvp
+  - IRI
+  - MAO
+NWG:
+  - NAO
+  - Cly
+  - Edi
+  - NTH
+  - Nwy
+  - BAR
+BAR:
+  - NWG
+  - Nwy
+  - Stp/nc
+Stp/nc:
+  - BAR
+  - Nwy
+Stp/sc:
+  - Fin
+  - BOT
+  - Lvn
+Fin:
+  - Stp/sc
+  - BOT
+  - Swe
+Swe:
+  - Nwy
+  - SKA
+  - Den
+  - BAL
+  - BOT
+  - Fin
+Nwy:
+  - NWG
+  - BAR
+  - Stp/nc
+  - Swe
+  - SKA
+  - NTH
+BOT:
+  - Swe
+  - Fin
+  - Stp/sc
+  - BAL
+  - Lvn
+BAL:
+  - BOT
+  - Lvn
+  - Pru
+  - Ber
+  - Kie
+  - Den
+  - Swe
+Den:
+  - BAL
+  - Swe
+  - SKA
+  - NTH
+  - HEL
+  - Kie
+SKA:
+  - Swe
+  - Nwy
+  - Den
+  - NTH
+NTH:
+  - NWG
+  - Nwy
+  - SKA
+  - Den
+  - HEL
+  - Hol
+  - Bel
+  - ENG
+  - Lon
+  - Yor
+  - Edi
+HEL:
+  - NTH
+  - Den
+  - Kie
+  - Hol
+Edi:
+  - Cly
+  - NWG
+  - NTH
+  - Yor
+Cly:
+  - NAO
+  - NWG
+  - Edi
+  - Lvp
+Lvp:
+  - Cly
+  - NAO
+  - IRI
+  - Wal
+Wal:
+  - Lvp
+  - IRI
+  - ENG
+  - Lon
+Yor:
+  - Edi
+  - NTH
+  - Lon
+Lon:
+  - Yor
+  - NTH
+  - ENG
+  - Wal
+ENG:
+  - Lon
+  - Wal
+  - IRI
+  - MAO
+  - Bre
+  - Pic
+  - Bel
+  - NTH
+IRI:
+  - NAO
+  - Lvp
+  - Wal
+  - ENG
+  - MAO
+MAO:
+  - NAO
+  - IRI
+  - ENG
+  - Bre
+  - Gas
+  - Spa/nc
+  - Por
+  - WES
+  - Naf
+WES:
+  - MAO
+  - Spa/sc
+  - LYO
+  - TYS
+  - Tun
+  - Naf
+LYO:
+  - Spa/sc
+  - Mar
+  - Pie
+  - Tus
+  - TYS
+  - WES
+TYS:
+  - LYO
+  - Tus
+  - Rom
+  - Nap
+  - ION
+  - Tun
+  - WES
+ION:
+  - Tun
+  - TYS
+  - Nap
+  - Apu
+  - ADR
+  - Alb
+  - Gre
+  - AEG
+  - EAS
+ADR:
+  - Apu
+  - Ven
+  - Tri
+  - Alb
+  - ION
+AEG:
+  - ION
+  - Gre
+  - Bul/sc
+  - Con
+  - Smy
+  - EAS
+EAS:
+  - ION
+  - AEG
+  - Smy
+  - Syr
+BLA:
+  - Con
+  - Bul/ec
+  - Rum
+  - Sev
+  - Arm
+  - Ank
+Lvn:
+  - Stp/sc
+  - BOT
+  - BAL
+  - Pru
+Pru:
+  - Lvn
+  - BAL
+  - Ber
+Ber:
+  - Pru
+  - BAL
+  - Kie
+Kie:
+  - Ber
+  - BAL
+  - Den
+  - HEL
+  - Hol
+Hol:
+  - Kie
+  - HEL
+  - NTH
+  - Bel
+Bel:
+  - Hol
+  - Pic
+  - NTH
+  - ENG
+Pic:
+  - Bel
+  - ENG
+  - Bre
+Bre:
+  - Pic
+  - Bre
+  - MAO
+  - Gas
+  - ENG
+Gas:
+  - Bre
+  - MAO
+  - Spa/nc
+Spa/nc:
+  - Gas
+  - Por
+  - MAO
+Por:
+  - Spa/nc
+  - Spa/sc
+  - MAO
+Spa/sc:
+  - Por
+  - WES
+  - LYO
+  - Mar
+Naf:
+  - MAO
+  - WES
+  - Tun
+Tun:
+  - Naf
+  - WES
+  - TYS
+  - ION
+Mar:
+  - Spa/sc
+  - Pie
+  - LYO
+Pie:
+  - Mar
+  - LYO
+  - Tus
+Tus:
+  - Pie
+  - LYO
+  - TYS
+  - Rom
+Rom:
+  - Tus
+  - TYS
+  - Nap
+Nap:
+  - Rom
+  - TYS
+  - ION
+  - Apu
+Apu:
+  - Nap
+  - ION
+  - ADR
+  - Ven
+Ven:
+  - Apu
+  - Tri
+  - ADR
+Tri:
+  - Ven
+  - ADR
+  - Alb
+Alb:
+  - Tri
+  - ADR
+  - ION
+  - Gre
+Gre:
+  - Alb
+  - ION
+  - AEG
+  - Bul/sc
+Bul/sc:
+  - Gre
+  - AEG
+  - Con
+Bul/ec:
+  - Rum
+  - BLA
+  - Con
+Con:
+  - Bul/ec
+  - Bul/sc
+  - BLA
+  - AEG
+  - Smy
+  - Ank
+Smy:
+  - Con
+  - AEG
+  - EAS
+  - Syr
+Syr:
+  - Smy
+  - EAS
+Ank:
+  - Con
+  - Arm
+  - BLA
+Arm:
+  - Ank
+  - BLA
+  - Sev
+Sev:
+  - Arm
+  - BLA
+  - Rum
+Rum:
+  - Sev
+  - BLA
+  - Bul/ec
