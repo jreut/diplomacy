@@ -1,5 +1,5 @@
-require "diplomacy/version"
+require 'diplomacy/version'
 
-module Diplomacy
+module Diplomacy # :nodoc:
   # Your code goes here...
 end
