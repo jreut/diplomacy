@@ -9,9 +9,10 @@ module Minitest
   class Test
     parallelize_me!
 
-    def load_yaml(name)
-      file = Pathname.new(__dir__).parent.join('data', "#{name}.yml").open
-      YAML.safe_load file
+    def assert_failure_message(matcher, result)
+      result
+        .fmap { |value| flunk "got #{value} instead of failure" }
+        .or { |failure| assert_match matcher, failure }
     end
   end
 end
