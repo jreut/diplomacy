@@ -21,6 +21,8 @@ module Diplomacy
           parse_support(input)
         when :hold
           parse_hold(input, has_unit: has_unit)
+        when :convoy
+          parse_convoy(input)
         else
           Failure "unhandled type '#{type}'"
         end
@@ -59,6 +61,11 @@ module Diplomacy
       end
     end
 
+    def parse_convoy(input)
+      at, from, to = input.scan(PROVINCE)
+      Success Order::Convoy.new(at: at, from: from, to: to)
+    end
+
     def parse_unit(input)
       case input[0].upcase
       when 'A'
@@ -75,6 +82,8 @@ module Diplomacy
         Success :support
       elsif input =~ /\bH\b/
         Success :hold
+      elsif input =~ /\bC\b/
+        Success :convoy
       else
         Success :move
       end

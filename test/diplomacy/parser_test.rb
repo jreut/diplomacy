@@ -74,6 +74,14 @@ module Diplomacy
       )
     end
 
+    def test_convoy
+      input = 'F NTH C Bel - Lon'
+      assert_result_equal(
+        Order::Convoy.new(at: 'NTH', from: 'Bel', to: 'Lon'),
+        @parser.parse(input)
+      )
+    end
+
     def assert_result_equal(expected, result, msg = nil)
       result
         .fmap { |actual| assert_equal expected, actual }

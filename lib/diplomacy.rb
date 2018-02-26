@@ -6,6 +6,7 @@ require 'anima'
 require 'dry-monads'
 
 require 'diplomacy/graph'
+require 'diplomacy/order/convoy'
 require 'diplomacy/order/hold'
 require 'diplomacy/order/move'
 require 'diplomacy/order/support'
