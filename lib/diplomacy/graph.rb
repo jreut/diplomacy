@@ -1,5 +1,7 @@
 
 
+# frozen_string_literal: true
+
 module Diplomacy
   # Connections among the provinces of a Diplomacy board
   class Graph

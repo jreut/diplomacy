@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Role
   module Supportable
     def test_responds_to_destination

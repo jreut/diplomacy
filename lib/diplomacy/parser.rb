@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Diplomacy
   # Parse strings into orders
   class Parser
@@ -78,11 +80,11 @@ module Diplomacy
     end
 
     def parse_order_type(input)
-      if input =~ /\bS\b/
+      if input.match?(/\bS\b/)
         Success :support
-      elsif input =~ /\bH\b/
+      elsif input.match?(/\bH\b/)
         Success :hold
-      elsif input =~ /\bC\b/
+      elsif input.match?(/\bC\b/)
         Success :convoy
       else
         Success :move
