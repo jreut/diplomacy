@@ -15,6 +15,9 @@ require 'diplomacy/order/support'
 require 'diplomacy/order/supported/hold'
 require 'diplomacy/order/supported/move'
 require 'diplomacy/parser'
+require 'diplomacy/validator'
+require 'diplomacy/validator/hold'
+require 'diplomacy/validator/support'
 require 'diplomacy/version'
 
 module Diplomacy # :nodoc:
