@@ -67,6 +67,14 @@ module Diplomacy
       assert_convoy 'Yor', 'Stp', 'Nwy', 'NTH', 'NWG', 'BAR'
     end
 
+    def test_exist_works
+      assert @graph.exist? unit: :army, province: 'Bel'
+    end
+
+    def test_exists_false_for_fleet_in_landlocked_province
+      refute @graph.exist? unit: :fleet, province: 'Mos'
+    end
+
     def assert_move(unit, *nodes)
       assert(
         @graph.can_move?(unit: unit, edge: Set.new(nodes)),

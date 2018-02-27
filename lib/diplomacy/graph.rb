@@ -35,6 +35,10 @@ module Diplomacy
       ).any?
     end
 
+    def exist?(unit:, province:)
+      @data[unit].key? province
+    end
+
     private
 
     def convoy_rec(goal:, current:, rest:)
@@ -44,10 +48,6 @@ module Diplomacy
       possible_fleets.flat_map do |fleet|
         convoy_rec goal: goal, current: fleet, rest: rest.dup.delete(fleet)
       end
-    end
-
-    def exist?(unit:, province:)
-      @data[unit].key? province
     end
 
     def strip_coast(string)
