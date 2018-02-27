@@ -38,7 +38,7 @@ module Diplomacy
       expected = Order::Support.new(
         unit: :army,
         at: 'Ruh',
-        order: Order::Move.new(unit: nil, from: 'Pic', to: 'Bel')
+        target: Order::Supported::Move.new(from: 'Pic', to: 'Bel')
       )
       assert_result_equal expected, @parser.parse(input)
     end
@@ -55,7 +55,7 @@ module Diplomacy
         Order::Support.new(
           unit: :army,
           at: 'Swe',
-          order: Order::Hold.new(unit: nil, at: 'Nwy')
+          target: Order::Supported::Hold.new(at: 'Nwy')
         ),
         @parser.parse(input)
       )

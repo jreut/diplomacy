@@ -8,13 +8,14 @@ module Diplomacy
 
       def setup
         @subject = Support.new(
-          unit: :bango,
+          unit: :army,
           at: 'GNV',
-          order: Hold.new(
-            unit: nil,
-            at: 'ATL'
-          )
+          target: Supported::Hold.new(at: 'ATL')
         )
+      end
+
+      def test_to_s
+        assert_equal 'A GNV S ATL H', @subject.to_s
       end
     end
   end

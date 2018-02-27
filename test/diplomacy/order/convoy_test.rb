@@ -13,6 +13,10 @@ module Diplomacy
           to: 'Baz'
         )
       end
+
+      def test_to_s
+        assert_equal 'F FOO C Bar - Baz', @subject.to_s
+      end
     end
   end
 end

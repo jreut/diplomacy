@@ -10,6 +10,8 @@ require 'diplomacy/order/convoy'
 require 'diplomacy/order/hold'
 require 'diplomacy/order/move'
 require 'diplomacy/order/support'
+require 'diplomacy/order/supported/hold'
+require 'diplomacy/order/supported/move'
 require 'diplomacy/parser'
 require 'diplomacy/version'
 

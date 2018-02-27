@@ -37,7 +37,7 @@ module Diplomacy
           Order::Hold.new unit: unit, at: at
         end
       else
-        Order::Hold.new unit: nil, at: at
+        Order::Supported::Hold.new at: at
       end
     end
 
@@ -48,7 +48,7 @@ module Diplomacy
           Order::Move.new unit: unit, from: from, to: to
         end
       else
-        Order::Move.new unit: nil, from: from, to: to
+        Order::Supported::Move.new from: from, to: to
       end
     end
 
@@ -56,8 +56,8 @@ module Diplomacy
       parse_unit(input).fmap do |unit|
         head, rest = input.split(/\bS\b/)
         at = head.match(PROVINCE)[0]
-        order = parse_internal(rest, has_unit: false)
-        Order::Support.new(unit: unit, at: at, order: order)
+        order = parse_internal rest, has_unit: false
+        Order::Support.new unit: unit, at: at, target: order
       end
     end
 

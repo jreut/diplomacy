@@ -4,11 +4,11 @@ module Diplomacy
       include Anima.new :at, :from, :to
 
       def unit
-        :fleet
+        @unit ||= :fleet
       end
 
-      def provinces
-        Set.new [at, from, to]
+      def to_s
+        @to_s ||= "F #{at} C #{from} - #{to}"
       end
     end
   end

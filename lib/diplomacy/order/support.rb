@@ -1,10 +1,10 @@
 module Diplomacy
   module Order
     class Support # :nodoc:
-      include Anima.new :unit, :at, :order
+      include Anima.new :unit, :at, :target
 
-      def provinces
-        Set.new [at, *order.provinces]
+      def to_s
+        @to_s ||= "#{unit.to_s[0].upcase} #{at} S #{target}"
       end
     end
   end
